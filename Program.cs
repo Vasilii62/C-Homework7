@@ -39,12 +39,12 @@ PrintArray(twoDArray);
 
 8 4 2 4
 17 -> такого числа в массиве нет*/
-/*
+
 Console.WriteLine("Enter the line number: ");
 int n = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Enter the column number: ");
 int m = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("");
+Console.WriteLine();
 int [,] numbers = new int [3,4];
 FillArrayRandomNumbers(numbers);
 
@@ -71,11 +71,11 @@ void PrintArray(int[,] array)
             Console.Write(array[i,j] + " ");
         }   
         Console.Write(" ");
-        Console.WriteLine(""); 
+        Console.WriteLine(); 
     }
 }
 
-Console.WriteLine("");
+Console.WriteLine();
 if (n > numbers.GetLength(0) || m > numbers.GetLength(1))
 {
     Console.WriteLine($"{n}{m} -> There is no such number in the array");
@@ -84,7 +84,7 @@ else
 {
     Console.WriteLine($"The value of the element {n} row и {m} column -> {numbers[n-1,m-1]}");
 }
-Console.WriteLine("");*/
+Console.WriteLine();
 
 /* Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 
@@ -94,11 +94,11 @@ Console.WriteLine("");*/
 8 4 2 4
 Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3. */
 
-Console.WriteLine("Input numbers of rows: ");
+/*Console.WriteLine("Input numbers of rows: ");
 int user_rows = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Input numbers of columns: ");
 int user_columns = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("");
+Console.WriteLine();
 int[,] numbers = new int[user_rows, user_columns];
 FillArrayRandomNumbers(numbers);
 PrintArray(numbers);
@@ -127,7 +127,7 @@ void PrintArray(int[,] array)
             Console.Write(array[i, j] + " ");
         }
         Console.Write(" ");
-        Console.WriteLine("");
+        Console.WriteLine();
     }
 }
 
@@ -141,7 +141,7 @@ for (int j = 0; j < numbers.GetLength(1); j++)
     avarage = avarage / user_rows;
     Console.Write(avarage + "; ");
 }
-Console.WriteLine();
+Console.WriteLine();*/
 
 
 
